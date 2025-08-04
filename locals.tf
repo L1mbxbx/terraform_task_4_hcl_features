@@ -6,7 +6,7 @@ locals {
     "${var.prefix}-nic-2",
     "${var.prefix}-nic-3"
   ]
-  
+
   security_rules = [
     {
       name                       = "SSH"
