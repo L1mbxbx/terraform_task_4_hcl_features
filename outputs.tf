@@ -4,7 +4,7 @@ output "vm_names_upper" {
 
 output "joined_tags" {
     value = join("-", flatten([
-        for vm in azurerm_azurerm_virtual_machine.main : values(vm.tags)
+        for vm in azurerm_virtual_machine.main : values(vm.tags)
     ]))
 }
 

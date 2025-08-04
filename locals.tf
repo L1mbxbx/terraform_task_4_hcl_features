@@ -26,3 +26,11 @@ locals {
     }
   ]
 }
+
+locals {
+  network_interface_names = [
+    "{var.prefix}-nic-1",
+    "{var.prefix}-nic-2",
+    "{var.prefix}-nic-3"
+  ]
+}
